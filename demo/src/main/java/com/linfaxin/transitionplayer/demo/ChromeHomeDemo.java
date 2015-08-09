@@ -39,7 +39,6 @@ import com.linfaxin.transitionplayer.transitions.ChangeTextColor;
  */
 public class ChromeHomeDemo extends ActionBarActivity{
     SwipeLayout swipeLayout;
-    View inputView;
     TransitionPlayer transitionPlayer = new TransitionPlayer();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,9 +46,10 @@ public class ChromeHomeDemo extends ActionBarActivity{
         setContentView(R.layout.demp_chrome_home);
 
         swipeLayout = (SwipeLayout) findViewById(R.id.swipeLayout);
-        swipeLayout.setDrag(SwipeLayout.DragEdge.Top, swipeLayout.getChildAt(0));
+        swipeLayout.getDragEdgeMap().clear();
+        swipeLayout.addDrag(SwipeLayout.DragEdge.Top, swipeLayout.getChildAt(0));
 
-        swipeLayout.addRevealListener(swipeLayout.getChildAt(0), new SwipeLayout.OnRevealListener() {
+        swipeLayout.addRevealListener(R.id.placeHolder, new SwipeLayout.OnRevealListener() {
             @Override
             public void onReveal(View child, SwipeLayout.DragEdge edge, float fraction, int distance) {
                 transitionPlayer.setCurrentFraction(fraction);
