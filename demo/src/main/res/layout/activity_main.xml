@@ -12,17 +12,17 @@
     <Button
         android:onClick="ShowDrawerLayoutDemo"
         android:text="Animation With DrawerLayout"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content" />
     <Button
         android:onClick="ShowMaterialMenuDemo"
-        android:text="MaterialMenu"
-        android:layout_width="wrap_content"
+        android:text="Material Menu"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content" />
     <Button
         android:onClick="ShowChromeHomeDemo"
-        android:text="ChromeHomeDemo"
-        android:layout_width="wrap_content"
+        android:text="Chrome Home Demo"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
 </LinearLayout>
