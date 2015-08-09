@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:background="#ddd">
+
+    <ImageButton
+        android:id="@+id/action_bar_ic_windows"
+        android:layout_toLeftOf="@+id/action_bar_ic_more"
+        android:background="@drawable/btn_bg"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/actionbar_ic_windows"
+        android:layout_width="40dp"
+        android:layout_height="48dp" />
+
+    <TextView
+        android:id="@+id/action_bar_ic_window_count"
+        android:layout_toLeftOf="@+id/action_bar_ic_more"
+        android:layout_alignLeft="@+id/action_bar_ic_windows"
+        android:layout_alignParentTop="true"
+        android:textColor="@android:color/black"
+        android:text="1"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp" />
+
+    <ImageButton
+        android:id="@+id/action_bar_ic_more"
+        android:background="@drawable/btn_bg"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/actionbar_ic_more"
+        android:layout_width="40dp"
+        android:layout_height="48dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:src="@mipmap/ic_launcher"
+        android:layout_marginTop="-120dp"
+        android:alpha="0"
+        android:layout_marginBottom="16dp"
+        android:layout_above="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="120dp" />
+
+    <TextView
+        android:id="@+id/editText"
+        android:textSize="20dp"
+        android:gravity="center_vertical"
+        android:hint=" Input Search"
+        android:layout_toLeftOf="@+id/action_bar_ic_windows"
+        android:background="@drawable/chrome_home_head_input_bg"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="6dp"
+        android:layout_width="match_parent"
+        android:layout_height="36dp" />
+
+    <View android:id="@+id/divider"
+        android:layout_alignParentBottom="true"
+        android:background="#999"
+        android:layout_width="wrap_content"
+        android:layout_height="1px"/>
+</RelativeLayout>
