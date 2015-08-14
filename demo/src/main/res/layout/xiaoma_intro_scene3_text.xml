@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/horizontal_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/transparent"
+        android:layout_centerVertical="true"/>
+
+    <View
+        android:id="@+id/vertical_line"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:layout_centerHorizontal="true"/>
+
+    <RelativeLayout
+        android:id="@+id/low_price_item"
+        android:layout_width="72dp"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/vertical_line"
+        android:layout_above="@id/horizontal_line"
+        android:layout_marginBottom="4dp"
+        android:layout_marginRight="60dp">
+
+        <ImageView
+            android:id="@+id/low_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="14dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/xiaoma_intro_page3_img1"/>
+
+        <ImageView
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_above="@id/low_title"
+            android:src="@drawable/xiaoma_intro_img_low_icon"
+            android:scaleType="center"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/real_source_item"
+        android:layout_width="72dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/horizontal_line"
+        android:layout_marginBottom="4dp"
+        android:layout_marginRight="60dp">
+
+        <ImageView
+            android:id="@+id/real_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="14dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/xiaoma_intro_page3_img2"/>
+
+        <ImageView
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_above="@id/real_title"
+            android:src="@drawable/xiaoma_intro_img_real_icon"
+            android:scaleType="centerInside"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/keep_privacy_item"
+        android:layout_width="72dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/vertical_line"
+        android:layout_above="@id/horizontal_line"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="62dp">
+
+        <ImageView
+            android:id="@+id/privacy_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="14dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/xiaoma_intro_page3_img3"/>
+
+        <ImageView
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_above="@id/privacy_title"
+            android:src="@drawable/xiaoma_intro_img_privacy_icon"
+            android:scaleType="center"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/has_deposit_item"
+        android:layout_width="72dp"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/vertical_line"
+        android:layout_below="@id/horizontal_line"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="32dp">
+
+        <ImageView
+            android:id="@+id/deposit_icon"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:src="@drawable/xiaoma_intro_img_deposit_icon"
+            android:scaleType="center"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_below="@id/deposit_icon"
+            android:layout_marginTop="14dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/xiaoma_intro_page3_img4"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/is_profession_item"
+        android:layout_width="72dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/horizontal_line"
+        android:layout_marginTop="32dp">
+
+        <ImageView
+            android:id="@+id/profession_icon"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:src="@drawable/xiaoma_intro_img_compe_icon"
+            android:scaleType="center"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_below="@id/profession_icon"
+            android:layout_marginTop="14dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/xiaoma_intro_page3_img5"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/best_server_item"
+        android:layout_width="72dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/vertical_line"
+        android:layout_below="@id/horizontal_line"
+        android:layout_marginLeft="62dp"
+        android:layout_marginTop="32dp">
+
+        <ImageView
+            android:id="@+id/server_icon"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:src="@drawable/xiaoma_intro_img_promise_icon"
+            android:scaleType="center"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_below="@id/server_icon"
+            android:layout_marginTop="14dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/xiaoma_intro_page3_img6"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/fast_ask_item"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_above="@+id/horizontal_line"
+        android:layout_marginBottom="82dp"
+        android:visibility="gone"/>
+
+    <RelativeLayout
+        android:id="@+id/fase_price_item"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_above="@+id/horizontal_line"
+        android:layout_marginBottom="6dp"
+        android:visibility="gone"/>
+
+    <RelativeLayout
+        android:id="@+id/fast_sign_item"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_below="@+id/horizontal_line"
+        android:layout_marginTop="6dp"
+        android:visibility="gone"/>
+
+    <RelativeLayout
+        android:id="@+id/fast_take_item"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_below="@+id/horizontal_line"
+        android:layout_marginTop="82dp"
+        android:visibility="gone"/>
+
+
+
+</RelativeLayout>

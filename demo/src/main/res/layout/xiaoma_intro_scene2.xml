@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/horizontal_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/transparent"
+        android:layout_centerVertical="true"/>
+
+    <View
+        android:id="@+id/vertical_line"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:layout_centerHorizontal="true"/>
+
+
+    <View
+        android:id="@+id/green"
+        android:layout_width="97dp"
+        android:layout_height="97dp"
+        android:layout_below="@+id/horizontal_line"
+        android:layout_toLeftOf="@+id/vertical_line"
+        android:layout_marginTop="13dp"
+        android:layout_marginRight="42dp"
+        android:alpha="1.0"
+        android:background="@drawable/xiaoma_intro_img_green"/>
+
+    <View
+        android:id="@+id/deep_purple"
+        android:layout_width="21dp"
+        android:layout_height="21dp"
+        android:layout_above="@+id/purple"
+        android:layout_toLeftOf="@+id/purple"
+        android:layout_marginBottom="-4dp"
+        android:layout_marginLeft="-4dp"
+        android:alpha="1.0"
+        android:background="@drawable/xiaoma_intro_img_deep_purple"/>
+
+    <View
+        android:id="@+id/purple"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_above="@+id/horizontal_line"
+        android:layout_toLeftOf="@+id/vertical_line"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="13dp"
+        android:alpha="1.0"
+        android:background="@drawable/xiaoma_intro_img_purple"/>
+
+    <View
+        android:id="@+id/yellow"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_below="@+id/horizontal_line"
+        android:layout_toRightOf="@+id/vertical_line"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="105dp"
+        android:alpha="1.0"
+        android:background="@drawable/xiaoma_intro_img_yellow"/>
+
+
+    <View
+        android:id="@+id/red"
+        android:layout_width="142dp"
+        android:layout_height="142dp"
+        android:layout_centerInParent="true"
+        android:alpha="1.0"
+        android:background="@drawable/xiaoma_intro_img_red"/>
+
+    <View
+        android:id="@+id/orange"
+        android:layout_width="86dp"
+        android:layout_height="86dp"
+        android:layout_below="@+id/horizontal_line"
+        android:layout_toRightOf="@+id/vertical_line"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="34dp"
+        android:alpha="1.0"
+        android:background="@drawable/xiaoma_intro_img_orange"/>
+
+    <View
+        android:id="@+id/blue"
+        android:layout_width="83dp"
+        android:layout_height="83dp"
+        android:layout_above="@+id/horizontal_line"
+        android:layout_toRightOf="@+id/vertical_line"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="26dp"
+        android:alpha="1.0"
+        android:background="@drawable/xiaoma_intro_img_blue"/>
+
+    <ImageView
+        android:id="@+id/xiaoma"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="-90dp"
+        android:alpha="0"
+        android:src="@drawable/xiaoma_intro_img_xiaoma"/>
+
+</RelativeLayout>

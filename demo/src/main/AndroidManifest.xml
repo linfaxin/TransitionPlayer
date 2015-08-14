@@ -19,6 +19,7 @@
         <activity android:name=".DrawerLayoutDemo" android:label="DrawerLayoutDemo"/>
         <activity android:name=".MaterialMenuDemo" android:label="MaterialMenuDemo"/>
         <activity android:name=".ChromeHomeDemo" android:label="ChromeHomeDemo"/>
+        <activity android:name=".XiaoMaIntroDemo" android:label="XMIntroDemo" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
     </application>
 
 </manifest>

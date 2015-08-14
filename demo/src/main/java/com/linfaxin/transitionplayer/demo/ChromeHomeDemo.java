@@ -37,7 +37,7 @@ public class ChromeHomeDemo extends ActionBarActivity{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.demp_chrome_home);
+        setContentView(R.layout.demo_chrome_home);
 
         swipeLayout = (SwipeLayout) findViewById(R.id.swipeLayout);
         swipeLayout.getDragEdgeMap().clear();

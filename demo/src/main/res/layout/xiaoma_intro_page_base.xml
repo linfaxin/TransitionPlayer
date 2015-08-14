@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/center_area"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:layout_centerInParent="true"/>
+
+    <ImageView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/center_area"
+        android:layout_alignParentTop="true"
+        android:scaleType="centerInside"/>
+
+    <ImageView
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/center_area"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/xiaoma_intro_bottom_text1"/>
+
+</RelativeLayout>

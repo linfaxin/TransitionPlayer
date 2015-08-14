@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <RelativeLayout
+        android:id="@+id/root_view"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:layout_centerVertical="true">
+        <RelativeLayout
+            android:id="@+id/root_view_3_to_4"
+            android:visibility="invisible"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <include layout="@layout/xiaoma_intro_scene3"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/root_view_2_to_3"
+            android:visibility="invisible"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <include layout="@layout/xiaoma_intro_scene2"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/root_view_1_to_2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <include layout="@layout/xiaoma_intro_scene1"/>
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/text_root_view"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:layout_alignTop="@+id/root_view"
+        android:layout_centerVertical="true">
+
+        <include layout="@layout/xiaoma_intro_scene1_text"/>
+
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/extra_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <TextView
+        android:id="@+id/start"
+        android:background="@drawable/btn_bg"
+        android:layout_width="112dp"
+        android:layout_height="32dp"
+        android:layout_below="@id/root_view"
+        android:layout_marginTop="36dp"
+        android:layout_centerHorizontal="true"
+        android:text="立即开启"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="#003cff"
+        android:textSize="13sp"/>
+
+    <TextView
+        android:id="@+id/through"
+        android:layout_alignParentTop="true"
+        android:layout_width="48dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="12dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="12dp"
+        android:text="跳 过"
+        android:gravity="center"
+        android:background="@drawable/btn_bg"
+        android:textColor="#333"
+        android:textSize="12sp"/>
+
+</RelativeLayout>

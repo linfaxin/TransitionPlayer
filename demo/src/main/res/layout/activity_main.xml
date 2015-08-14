@@ -24,5 +24,10 @@
         android:text="Chrome Home Demo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
+    <Button
+        android:onClick="ShowXiaoMaIntroDemo"
+        android:text="XiaoMa Intro Demo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
 </LinearLayout>

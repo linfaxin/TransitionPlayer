@@ -25,4 +25,8 @@ public class MainActivity extends ActionBarActivity {
     public void ShowChromeHomeDemo(View view) {
         startActivity(new Intent(this, ChromeHomeDemo.class));
     }
+
+    public void ShowXiaoMaIntroDemo(View view) {
+        startActivity(new Intent(this, XiaoMaIntroDemo.class));
+    }
 }
