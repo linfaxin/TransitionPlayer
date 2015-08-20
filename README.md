@@ -24,7 +24,9 @@ Android library to control Transition animates. A simple way to create a interac
     });
 ```
 
+## License
 
+MIT License.
 
 ## Demo2 MaterialMenu
 ![image](demo/demo_menu.gif)
