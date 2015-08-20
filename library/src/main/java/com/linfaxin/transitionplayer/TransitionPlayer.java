@@ -112,7 +112,7 @@ public class TransitionPlayer extends TransitionSet {
     }
 
     public void setCurrentFraction(float fraction){
-        if(Build.VERSION.SDK_INT>=Build.VERSION_CODES.LOLLIPOP){
+        if(Build.VERSION.SDK_INT>Build.VERSION_CODES.LOLLIPOP){
             for (ValueAnimator valueAnimator : getAllAnimator()) {
                 valueAnimator.setCurrentFraction(fraction);
             }
