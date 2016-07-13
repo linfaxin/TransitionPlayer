@@ -1,6 +1,6 @@
 # TransitionPlayer
 Android library to control Transition animates. A simple way to create a interactive animation.
-![image](demo/demo_xiaoma_intro.gif)
+
 
 ## Demo1 SimpleTransition
 ![image](demo/demo_drawerlayout.gif)
@@ -23,10 +23,6 @@ Android library to control Transition animates. A simple way to create a interac
         }
     });
 ```
-
-## License
-
-MIT License.
 
 ## Demo2 MaterialMenu
 ![image](demo/demo_menu.gif)
@@ -51,3 +47,8 @@ MIT License.
 ### Code:
 [ChromeHomeDemo.java](demo/src/main/java/com/linfaxin/transitionplayer/demo/ChromeHomeDemo.java)
 
+
+
+## License
+
+MIT License.
